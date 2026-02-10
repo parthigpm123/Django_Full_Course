@@ -21,7 +21,10 @@
 
     <h1>Full stack web development</h1>
     <h2>HTML</h2>
-    
+    {{ form }}
+    {% csrf_token %}
+    <input type="submit" value="Submit">
+
 <img src="{% static 'images/img.jpg' %}" alt="My img">
 
     <p>
