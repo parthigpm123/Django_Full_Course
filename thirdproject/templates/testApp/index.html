@@ -3,37 +3,9 @@
 {% load static %}
 <head>
     <title>Full Stack Web Development</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    {% if emp_list %}
-    <table>
-    {% for employee in emp_list %}
-    <tr>
-    <td>{{ employee.empNo }}</td>
-    <td>{{ employee.empName }}</td>
-    <td>{{ employee.empSalary }}</td>
-    <td>{{ employee.empAddress }}</td>
-    </tr>
-    {% endfor %}
-    {% endif %}
 
-
-    <h1>Full stack web development</h1>
-    <h2>HTML</h2>
-    {{ form }}
-    {% csrf_token %}
-    <input type="submit" value="Submit">
-
-<img src="{% static 'images/img.jpg' %}" alt="My img">
-
-    <p>
-        HTML stands for HyperText Markup Language. It is the standard language for creating web pages.
-    </p>
-
-    <p>
-        <b>Purpose:</b> It structures content on the web (text, images, links, etc.).
-    </p>
-
+    <h1>Cookies Count is {{count}}</h1>
 </body>
 </html>
