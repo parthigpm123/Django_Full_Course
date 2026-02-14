@@ -21,6 +21,7 @@ from crudApp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('student/', views.retrieve_view),
-    path('create/', views.create_view)
+    path('create/', views.create_view),
+    path('delete/<id>',views.Delete_view),
     
 ]

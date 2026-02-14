@@ -18,4 +18,4 @@ def populate(n):
             fstudent_record = faker.city()
             stud_record = Student.objects.get_or_create(sno=fsno, sname=fsname, sclass=fsclass, saddress=fsaddress)
             
-populate(10)            
+populate(11)            

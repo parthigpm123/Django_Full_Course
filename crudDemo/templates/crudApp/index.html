@@ -17,10 +17,11 @@
             <td> {{st.sname}}</td>
             <td> {{st.sclass}}</td>
             <td> {{st.saddress}}</td>
+            <td><a href='#'> Update </a> <a href='/delete/{{st.id}}'> Delete </a> </td>
         </tr>
         {% endfor %}
     </table>
-    <a href ='http://127.0.0.1:8000/create/'><button type ="button"> Add New Student </a>
+    <a href ='/create'><button type ="button"> Add New Student </a>
 
 {% endblock %}    
              
