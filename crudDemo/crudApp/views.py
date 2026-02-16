@@ -23,4 +23,17 @@ def Delete_view(request, id):
       student= Student.objects.get(id=id)
       student.delete()
       return redirect('/student')
+
+
+def update_view(request, id):
+      student = Student.objects.get(id=id)
+      if request.method == 'POST':
+            form = StudentForm(request.POST, instance=student)
+            if form.is_valid():
+                  form.save()  
+                  return redirect('/student')      
+      return render(request, 'crudApp/update.html', {'student': student})
+      
+      
+      
       
